@@ -40,7 +40,7 @@ document.body.append(result.toCanvas(4));      // 4× nearest-neighbour upscale
 Without a bundler, use the script build. It defines a global `Pixelart`:
 
 ```html
-<script src="https://shenmali.github.io/g-pixelart/lib/g-pixelart.min.js"></script>
+<script src="https://www.gamesai.me/g-pixelart/lib/g-pixelart.min.js"></script>
 <script>
   const px = await Pixelart.createPixelator();
 </script>

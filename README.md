@@ -2,7 +2,7 @@
 
 Pixelart turns images into pixel art in your browser. Adjust pixel size, choose from built-in or custom palettes, apply dithering, and export sharp PNGs, sprite sheets, or tilesets. Batch processing and video conversion are also available.
 
-**[Open Pixelart](https://shenmali.github.io/g-pixelart/editor/)** · [Documentation](https://shenmali.github.io/g-pixelart/docs/) · [Examples](https://shenmali.github.io/g-pixelart/examples/)
+**[Open Pixelart](https://www.gamesai.me/g-pixelart/editor/)** · [Documentation](https://www.gamesai.me/g-pixelart/docs/) · [Examples](https://www.gamesai.me/g-pixelart/examples/)
 
 ## Run locally
 
@@ -30,7 +30,7 @@ const result = await px.process({ width, height, data }, {
 });
 ```
 
-The built site also serves a self-contained browser module at [`lib/g-pixelart.bundle.esm.js`](https://shenmali.github.io/g-pixelart/lib/g-pixelart.bundle.esm.js) and a script build at [`lib/g-pixelart.min.js`](https://shenmali.github.io/g-pixelart/lib/g-pixelart.min.js). Video processing remains available in the editor and the `lib/video.js` entry.
+The built site also serves a self-contained browser module at [`lib/g-pixelart.bundle.esm.js`](https://www.gamesai.me/g-pixelart/lib/g-pixelart.bundle.esm.js) and a script build at [`lib/g-pixelart.min.js`](https://www.gamesai.me/g-pixelart/lib/g-pixelart.min.js). Video processing remains available in the editor and the `lib/video.js` entry.
 
 ## License and attribution
 

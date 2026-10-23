@@ -8,10 +8,10 @@ description: Put the whole editor inside your own page.
 # Embedding the editor
 
 ```html
-<link rel="stylesheet" href="https://shenmali.github.io/g-pixelart/lib/editor.css">
+<link rel="stylesheet" href="https://www.gamesai.me/g-pixelart/lib/editor.css">
 <div id="editor" style="height: 100vh"></div>
 <script type="module">
-  import { mountEditor } from 'https://shenmali.github.io/g-pixelart/lib/editor.esm.js';
+  import { mountEditor } from 'https://www.gamesai.me/g-pixelart/lib/editor.esm.js';
   const editor = await mountEditor(document.getElementById('editor'), { persist: false });
 </script>
 ```

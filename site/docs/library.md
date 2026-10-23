@@ -19,7 +19,7 @@ Clone the repository and run `npm ci`. This project is not published to npm.
 | Script tag | `dist/g-pixelart.min.js` | Global `Pixelart` |
 
 ```html
-<script src="https://shenmali.github.io/g-pixelart/lib/g-pixelart.min.js"></script>
+<script src="https://www.gamesai.me/g-pixelart/lib/g-pixelart.min.js"></script>
 ```
 
 TypeScript declarations are in `types/` for projects that consume the source or built modules.
