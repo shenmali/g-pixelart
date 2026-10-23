@@ -1,0 +1,92 @@
+{
+  "name": "g-pixelart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Turn images into pixel art in your browser, with palettes, dithering, and game-ready exports.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Shenmali",
+  "homepage": "https://shenmali.github.io/g-pixelart/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenmali/g-pixelart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shenmali/g-pixelart/issues"
+  },
+  "keywords": [
+    "pixel-art",
+    "dithering",
+    "palette",
+    "quantization",
+    "floyd-steinberg",
+    "bayer",
+    "webgl",
+    "glsl",
+    "shader",
+    "gif",
+    "sprite-sheet",
+    "lospec"
+  ],
+  "main": "./dist/g-pixelart.cjs",
+  "module": "./dist/g-pixelart.esm.js",
+  "types": "./types/index.d.ts",
+  "unpkg": "./dist/g-pixelart.min.js",
+  "jsdelivr": "./dist/g-pixelart.min.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/g-pixelart.esm.js",
+      "require": "./dist/g-pixelart.cjs",
+      "default": "./dist/g-pixelart.esm.js"
+    },
+    "./video": {
+      "types": "./types/video.d.ts",
+      "import": "./dist/video.esm.js",
+      "default": "./dist/video.esm.js"
+    },
+    "./editor": {
+      "types": "./types/editor.d.ts",
+      "import": "./dist/editor.esm.js",
+      "default": "./dist/editor.esm.js"
+    },
+    "./editor.css": "./dist/editor.css",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "./dist/editor.css",
+    "./dist/g-pixelart.js",
+    "./dist/g-pixelart.min.js"
+  ],
+  "files": [
+    "dist",
+    "lib",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "build:site": "npm run build && node scripts/build-site.mjs",
+    "watch": "node esbuild.config.mjs --watch",
+    "dev": "node scripts/serve.mjs --dev",
+    "preview": "node scripts/serve.mjs",
+    "bluenoise": "node scripts/gen-bluenoise.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "clean": "node scripts/clean.mjs",
+    "test": "npm run build:site && node --test",
+    "check:runtime": "node scripts/nodepod-check.mjs"
+  },
+  "dependencies": {
+    "shadermate": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12",
+    "highlight.js": "^11.12.0",
+    "marked": "^15.0.12"
+  }
+}
